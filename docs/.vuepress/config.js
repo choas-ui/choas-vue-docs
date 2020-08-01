@@ -17,52 +17,16 @@ module.exports = {
         ],
         sidebarDepth: 4,
         sidebar: {
-            '/components': [
+            '/': [
                 ['/components/', '概述'],
                 {
                     title: '组件',
                     children:[
                         {
-                            title: '基础组件',
+                            title: '表格',
                             children: [
                                 [
-                                    '/components/common/button', '按钮 CButton'
-                                ],
-                                [
-                                    '/components/common/icon', '图标 CIcon'
-                                ],
-                                [
-                                    '/components/common/message', '消息* CMessage'
-                                ],
-                                [
-                                    '/components/common/modal', '弹层 CModal'
-                                ],
-                                [
-                                    '/components/common/notification', '提醒* CNotification'
-                                ],
-                                [
-                                    '/components/common/progress', '进度条* CProgress'
-                                ],
-                                [
-                                    '/components/common/prompt', '轻提示* CPrompt'
-                                ],
-                                [
-                                    '/components/common/selection', '下拉框* CSelection'
-                                ],
-                                [
-                                    '/components/common/skeleton', '骨架屏* CSkeleton'
-                                ],
-                                [
-                                    '/components/common/table', '表格* CTable'
-                                ],
-                                [
-                                    '/components/common/tag', '标签 CTag'
-                                ],
-                                [
-                                    '/components/common/timeLine', '时间线* CTimeLine'
-                                ],
-                                [
-                                    '/components/common/tree', '树形 CTree'
+                                    '/components/table/table', '表格* CTable'
                                 ],
                             ]
                         },
@@ -70,47 +34,124 @@ module.exports = {
                             title: '表单',
                             children:[
                                 [
-                                    '/components/common/radio', '单选框 CRadio'
+                                    '/components/form/radio', '单选框 CRadio'
                                 ],
                                 [
-                                    '/components/common/checkbox', '复选框 CCheckbox'
+                                    '/components/form/checkbox', '复选框 CCheckbox'
                                 ],
                                 [
-                                    '/components/common/input', '输入框* CInput'
+                                    '/components/form/input', '输入框* CInput'
                                 ],
                                 [
-                                    '/components/common/input', '表单* CFrom'
+                                    '/components/form/form', '表单* CFrom'
                                 ],
                             ]
                         },
                         {
-                            title: '复合组件',
+                            title: '基础组件',
+                            path: '/components/basic/',
                             children: [
                                 [
-                                    '/components/complex/cascade', '级联* CCascade'
+                                    '/components/basic/button', '按钮 CButton'
                                 ],
                                 [
-                                    '/components/complex/treeModal', '树形弹框* CTreeModal'
+                                    '/components/basic/dropdown', '下拉菜单* CDropdown'
                                 ],
                                 [
-                                    '/components/complex/selectTree', '树形选择器* CSelectTree'
+                                    '/components/basic/icon', '图标 CIcon'
                                 ],
                                 [
-                                    '/components/complex/shuttle', '穿梭框* CShuttle'
+                                    '/components/basic/loading', '加载* CLoading'
                                 ],
                                 [
-                                    '/components/complex/uploader', '上传文件* CUploader'
+                                    '/components/basic/menu', '菜单* CMenu'
+                                ],
+                                [
+                                    '/components/basic/message', '消息 CMessage'
+                                ],
+                                [
+                                    '/components/basic/modal', '弹层 CModal'
+                                ],
+                                [
+                                    '/components/basic/notice', '提醒* CNotice'
+                                ],
+                                [
+                                    '/components/basic/notification', '通知* CNotification'
+                                ],
+                                [
+                                    '/components/basic/progress', '进度条* CProgress'
+                                ],
+                                [
+                                    '/components/basic/prompt', '轻提示 CPrompt'
+                                ],
+                                [
+                                    '/components/basic/selection', '下拉框* CSelection'
+                                ],
+                                [
+                                    '/components/basic/skeleton', '骨架屏* CSkeleton'
+                                ],
+
+                                [
+                                    '/components/basic/tag', '标签 CTag'
+                                ],
+                                [
+                                    '/components/basic/timeLine', '时间线* CTimeLine'
+                                ],
+                                [
+                                    '/components/basic/tree', '树形 CTree'
                                 ],
                             ]
                         },
                         {
-                            title: '特异组件',
+                            title: '结构组件',
+                            path: '/components/structure/',
                             children: [
+                                [
+                                    '/components/structure/breadCrumb', '面包屑* CBreadCrumb'
+                                ],
+                                [
+                                    '/components/structure/cascade', '级联* CCascade'
+                                ],
+                                [
+                                    '/components/structure/dialogBox', '对话框* CDialogBox'
+                                ],
+                                [
+                                    '/components/structure/messageListBox', '消息列表* CMessageListBox'
+                                ],
+                                [
+                                    '/components/structure/pagination', '分页* CPagination'
+                                ],
+                                [
+                                    '/components/structure/selectTree', '树形选择器* CSelectTree'
+                                ],
+                                [
+                                    '/components/structure/shuttle', '穿梭框* CShuttle'
+                                ],
+                                [
+                                    '/components/structure/steps', '步骤条* CSteps'
+                                ],
+                                [
+                                    '/components/structure/treeModal', '树形弹框* CTreeModal'
+                                ],
+                                [
+                                    '/components/structure/uploader', '上传文件* CUploader'
+                                ],
+                            ]
+                        },
+                        {
+                            title: '定制组件',
+                            children: [
+                                [
+                                    '/components/custom/checkboxCascade', '多选级联* CCheckboxCascade'
+                                ],
                                 [
                                     '/components/custom/inputCascade', 'input级联* CInputCascade'
                                 ],
                                 [
-                                    '/components/custom/inputTreeModal', 'input树形弹窗* CInputTreeModal'
+                                    '/components/custom/inputTreeModal', 'input树形弹窗 CInputTreeModal'
+                                ],
+                                [
+                                    '/components/custom/quickSearchBox', '快搜条件筛选* CQuickSearchBox'
                                 ],
                             ]
                         }

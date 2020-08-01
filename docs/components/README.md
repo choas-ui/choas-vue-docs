@@ -1,8 +1,11 @@
 #### 说明
 ---
   <ul>
-    <li>将子组件的通过属性传递方式深深吸引着我，是的这很react，虽然会让组件库的书写难度
-        增加……但真的很好用。choas的每一个可变内容都能实现这样的功能，这是我们的奋斗目标。
+    <li>
+        将子组件的通过属性传递方式深深吸引着我们，或许这样有点react。
+    </li>
+    <li>
+        choas的每一个可变内容都能实现函数组件功能。
     </li>
     <li>组件库尚在完善中，有关API的可能会调整。</li>
   </ul>
@@ -57,6 +60,6 @@ export default {
     maybe you need this.
   </p>
 
-    https://github.com/faliye/choas-vue/issues
+    https://github.com/choas-ui/choas-vue/issues
     
 祝你好运!!!

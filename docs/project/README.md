@@ -1,8 +1,8 @@
 ### 工程
 ---
-  <p>
-    计划快速生成一个vue骨架项目。
-  </p>
+  <ul>
+     <li>计划快速生成一个vue骨架项目。</li>
+  </ul>
 
         npm add chaos-vue-pro
         cnpm add chaos-vue-pro

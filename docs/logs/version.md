@@ -3,7 +3,22 @@
 
 :::tip 版本更新
   <p class="logs-version-item">
-    <span>2020-07-27</span>
+    <span>2020-08-02</span>
+    <b>v 0.1.52</b>
+  </p>
+  
+  <ol reversed>
+     <li>新增<b>Message</b>回调。</li>
+     <li>新增<b>Message</b>图标功能。</li>
+     <li>新增<b>Message</b>字体颜色。</li>
+     <li>新增<b>Icon</b>图标。</li>
+     <li>修复<b>Modal</b>样式问题。</li>
+  </ol>
+:::
+
+:::tip 版本更新
+  <p class="logs-version-item">
+    <span>2020-08-01</span>
     <b>v 0.1.51</b>
   </p>
   
