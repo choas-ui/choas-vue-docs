@@ -12,7 +12,7 @@
     "less-loader": "^6.2.0",
     "style-loader": "^1.2.1",
     "vuepress": "^1.5.2",
-    "vuepress-plugin-demo-container": "^0.1.0",
+    "vuepress-plugin-demo-container": "^0.1.0"
   },
   "eslintConfig": {
     "root": true,
@@ -36,11 +36,11 @@
   "author": "choas-ui",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/choas-ui/choas-vue/issues"
+    "url": "https://github.com/choas-ui/choas-vue-docs/issues"
   },
-  "homepage": "https://github.com/choas-ui/choas-vue#readme",
+  "homepage": "https://github.com/choas-ui/choas-vue-docs#readme",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/choas-ui/choas-vue.git"
+    "url": "git+https://github.com/choas-ui/choas-vue-docs.git"
   }
 }
