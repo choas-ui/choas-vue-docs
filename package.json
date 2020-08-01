@@ -1,8 +1,7 @@
 {
-  "name": "choas-vue",
-  "version": "0.1.52",
+  "name": "choas-vue-docs",
+  "version": "0.1.0",
   "private": false,
-  "main": "./src/lib/index.js",
   "scripts": {
     "docs": "vuepress dev docs --no-cache",
     "build": "vuepress build docs"
@@ -14,7 +13,6 @@
     "style-loader": "^1.2.1",
     "vuepress": "^1.5.2",
     "vuepress-plugin-demo-container": "^0.1.0",
-    "webpack": "^4.44.1"
   },
   "eslintConfig": {
     "root": true,

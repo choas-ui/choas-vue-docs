@@ -1,93 +1,4 @@
 const path = require('path')
-const webpack = require('webpack')
-// const choasUI = require('choas-vue/src/lib/CButton/index.js')
-
-// console.log(choasUI)
-
-
-function getPath(ComponentName) {
-    return path.resolve(process.cwd(), `src/lib/${ComponentName}`)
-}
-
-function registerComponentsList() {
-    return [
-        '@vuepress/register-components',
-        {
-            components: [
-                // {
-                //     name: CButton.name,
-                //     path: CButton
-                // },
-                {
-                    name: 'CButtonGroup',
-                    path: getPath('CButtonGroup')
-                },
-                {
-                    name: 'CCascade',
-                    path: getPath('CCascade')
-                },
-                {
-                    name: 'CCheckbox',
-                    path: getPath('CCheckbox')
-                },
-                {
-                    name: 'CCheckboxGroup',
-                    path: getPath('CCheckboxGroup')
-                },
-                {
-                    name: 'CIcon',
-                    path: getPath('CIcon')
-                },
-
-                {
-                    name: 'CModal',
-                    path: getPath('CModal')
-                },
-                {
-                    name: 'CProgress',
-                    path: getPath('CProgress')
-                },
-                {
-                    name: 'CPrompt',
-                    path: getPath('CPrompt')
-                },
-                {
-                    name: 'CRadio',
-                    path: getPath('CRadio')
-                },
-                {
-                    name: 'CRadioGroup',
-                    path: getPath('CRadioGroup')
-                },
-                {
-                    name: 'CSelection',
-                    path: getPath('CSelection')
-                },
-                {
-                    name: 'CTag',
-                    path: getPath('CTag')
-                },
-                {
-                    name: 'CTree',
-                    path: getPath('CTree')
-                },
-
-                // complex
-                {
-                    name: 'CTreeModal',
-                    path: getPath('CTreeModal')
-                },
-
-
-                // custom
-                {
-                    name: 'CInputTreeModal',
-                    path: getPath('CInputTreeModal')
-                }
-            ]
-        }
-    ]
-}
 
 module.exports = {
     title: 'Choas-vue',
@@ -225,34 +136,8 @@ module.exports = {
     },
     plugins: [
         [
-            new webpack.ProvidePlugin({
-                lod: 'lodash'
-            })
-        ],
-        [
             'vuepress-plugin-demo-container'
         ],
-        //
-        // // 这是 VuePress 默认主题使用这个插件的方式
-        // [
-        //     'vuepress-plugin-container',
-        //     {
-        //         type: 'tip',
-        //         defaultTitle: {
-        //             '/': 'TIP',
-        //             '/zh/': '提示',
-        //         },
-        //
-        //     }
-        // ],
-        // [
-        //     'vuepress-plugin-container',
-        //     {
-        //         type: 'demo',
-        //         before: info => `<div class="theorem"><p class="title">${info}</p>`,
-        //         after: '</div>',
-        //     },
-        // ],
     ]
 }
 
