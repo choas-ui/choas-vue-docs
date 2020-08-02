@@ -395,7 +395,7 @@ export default {
     <li><p>默认为实心三角形。</p>
     <li><p>你可以使用expand-icon插槽替换收起状态图标。</p></li>
     <li><p>你可以使用pick-up-icon插槽替换展开状态图标。</p></li>
-    <li><p>margin-icon-fix-margin-left 能让你小幅调整左侧的距离。</p></li>
+    <li><p>mark-icon-fix-margin-left 能让你小幅调整左侧的距离。</p></li>
   </ul>
    
 :::demo
@@ -404,7 +404,7 @@ export default {
         <p>{{ selectedData }}</p>
         <CTree
             :list-data="listData"
-            :file-icon-fix-margin="6"
+            mark-icon-fix-margin-right="20"
             v-model="selectedData"
         >
             <CIcon
@@ -468,7 +468,7 @@ export default {
 ---
   <ul>
     <li><p>作为插槽出现的file-icon会替换默认图标。</p>
-    <li><p>file-icon-fix-margin 能让你小幅调整两侧间距。</p></li>
+    <li><p>file-icon-fix-margin-right 能让你小幅调整两侧间距。</p></li>
   </ul>
    
 :::demo
@@ -477,7 +477,7 @@ export default {
         <p>{{ selectedData }}</p>
         <CTree
             :list-data="listData"
-            :file-icon-fix-margin="20"
+            :file-icon-fix-margin-right="20"
             v-model="selectedData"
         >
             <CIcon
