@@ -4,14 +4,6 @@
     <li>用于显示进度信息</li>
   </ul>
 
-数字 两色图片背景 状态 文字颜色 文字高度为总高度80% 可编辑状态
-
-可编辑高度
-
-双色 渐变加载  可选角度。
-
-动画。
-
 #### 值 value 
 ---
  <ul>
@@ -74,6 +66,50 @@
     ></CProgress>
     <br/>
     <CProgress height="5"
+            :value="60"
+    ></CProgress>
+</template>
+<script>
+    export default{
+        data(){
+            return {
+                value: 20
+            }
+        },
+        mounted(){
+           setInterval(()=>{
+                if(this.value<100){
+                    this.value++
+                }
+           },100)
+        }
+    } 
+</script>
+```
+:::
+
+#### 动画速度 timeSpan 
+---
+ <ul>
+    <li>进度条高度。</li>
+ </ul>
+
+:::demo
+```html
+<template>
+    <CProgress height="10"
+            :value="20"
+            :timeSpan="6"
+            color="#fff"
+    ></CProgress>
+    <br/>
+    <CProgress height="5"
+            :timeSpan="4"
+            :value="40"
+    ></CProgress>
+    <br/>
+    <CProgress height="5"
+            :timeSpan="2"
             :value="60"
     ></CProgress>
 </template>
