@@ -389,11 +389,12 @@ export default {
 ```
 :::
 
-#### 展开图标 mark-icon
+#### 折叠状态图标 expand-icon&&pick-up-icon
 ---
   <ul>
     <li><p>默认为实心三角形。</p>
-    <li><p>你可以使用mark-icon插槽替换。</p></li>
+    <li><p>你可以使用expand-icon插槽替换收起状态图标。</p></li>
+    <li><p>你可以使用pick-up-icon插槽替换展开状态图标。</p></li>
     <li><p>margin-icon-fix-margin-left 能让你小幅调整左侧的距离。</p></li>
   </ul>
    
@@ -406,6 +407,14 @@ export default {
             :file-icon-fix-margin="6"
             v-model="selectedData"
         >
+            <CIcon
+                slot="expand-icon"
+                icon-name="choas-add"
+            />
+            <CIcon
+                slot="pick-up-icon"
+                icon-name="choas-min"
+            />
         </CTree>
     </template>
 <script>
@@ -468,9 +477,13 @@ export default {
         <p>{{ selectedData }}</p>
         <CTree
             :list-data="listData"
-            :file-icon-fix-margin="6"
+            :file-icon-fix-margin="20"
             v-model="selectedData"
         >
+            <CIcon
+                slot="file-icon"
+                icon-name="choas-lists"
+            />
         </CTree>
     </template>
 <script>
@@ -515,70 +528,6 @@ export default {
             selectedData:[],
         }
     }
-}
-</script>
-```
-:::
-
-<p>file-icon-fix-margin 间距为20。</p>
- 
-:::demo
-```html
-    <template>
-        <p>{{ selectedData }}</p>
-        <CTree
-            :list-data="listData"
-            v-model="selectedData"
-            :file-icon-fix-margin-left="20"
-        >
-            <CIcon
-                slot="file-icon"
-                icon-name="choas-lists"
-            />
-        </CTree>
-    </template>
-<script>
-export default {
-    data(){
-        return {
-            listData:[
-                {
-                    key: '颜色',
-                    value: '0',
-                    expand: true,
-                    children:[
-                        {
-                            key: '冷色',
-                            value: '0-0',
-                        },
-                        {
-                            key: '暖色',
-                            value: '0-1',
-                            expand: true,
-                            children:[
-                                {
-                                    key: '红色',
-                                    value: '0-1-0',
-                                },
-                                {
-                                    key: '橙色',
-                                    value: '0-1-1',
-                                    expand: true,
-                                    children: [
-                                         {
-                                            key: '橙红',
-                                            value: '0-1-1-0',
-                                         },
-                                    ],
-                                },
-                            ]
-                        },
-                    ]
-                }
-            ],
-            selectedData:[],
-        }
-    },
 }
 </script>
 ```
@@ -885,9 +834,6 @@ export default {
 </script>
 ```
 :::
-
-#### 标记切换 active-mark-icon
----
 
 #### 多选 multiple
 ---
