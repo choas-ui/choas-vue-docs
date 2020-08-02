@@ -8,7 +8,8 @@
   </p>
   
   <ol reversed>
-     <li>新增<b>新增Tree</b>展开状态替换图标。</li>
+     <li>新增<b>Input</b>组件。</li>
+     <li>新增<b>Tree</b>展开状态替换图标。</li>
      <li>新增<b>Message</b>回调。</li>
      <li>新增<b>Message</b>图标功能。</li>
      <li>新增<b>Message</b>字体颜色。</li>
