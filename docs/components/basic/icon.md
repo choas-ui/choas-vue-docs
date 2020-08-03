@@ -272,9 +272,62 @@
     <p><CIcon icon-name="choas-fill-danger" width="25" height="25"/></p>
     <p>choas-fill-danger</p>
   </span>
-  
-  
-  
+  <span class="icon-lib">
+    <p><CIcon icon-name="choas-user" width="25" height="25"/></p>
+    <p>choas-user</p>
+  </span>
+  <span class="icon-lib">
+    <p><CIcon icon-name="choas-users" width="25" height="25"/></p>
+    <p>choas-users</p>
+  </span>
+  <span class="icon-lib">
+    <p><CIcon icon-name="choas-fill-users" width="25" height="25"/></p>
+    <p>choas-fill-users</p>
+  </span>
+  <span class="icon-lib">
+    <p><CIcon icon-name="choas-user-group" width="25" height="25"/></p>
+    <p>choas-user-group</p>
+  </span>
+  <span class="icon-lib">
+    <p><CIcon icon-name="choas-user-light-group" width="25" height="25"/></p>
+    <p>choas-user-light-group</p>
+  </span>
+  <span class="icon-lib">
+    <p><CIcon icon-name="choas-user-fill-group" width="25" height="25"/></p>
+    <p>choas-user-fill-group</p>
+  </span>
+  <span class="icon-lib">
+    <p><CIcon icon-name="choas-fill-user" width="25" height="25"/></p>
+    <p>choas-fill-user</p>
+  </span>
+  <span class="icon-lib">
+    <p><CIcon icon-name="choas-add-user" width="25" height="25"/></p>
+    <p>choas-add-user</p>
+  </span>
+    <span class="icon-lib">
+      <p><CIcon icon-name="choas-add-fill-user" width="25" height="25"/></p>
+      <p>choas-add-fill-user</p>
+    </span>
+  <span class="icon-lib">
+    <p><CIcon icon-name="choas-user-list" width="25" height="25"/></p>
+    <p>choas-user-list</p>
+  </span>
+  <span class="icon-lib">
+    <p><CIcon icon-name="choas-user-profile" width="25" height="25"/></p>
+    <p>choas-user-profile</p>
+  </span>
+  <span class="icon-lib">
+    <p><CIcon icon-name="choas-user-fill-profile" width="25" height="25"/></p>
+    <p>choas-user-fill-profile</p>
+  </span>
+  <span class="icon-lib">
+    <p><CIcon icon-name="choas-lock" width="25" height="25"/></p>
+    <p>choas-lock</p>
+  </span>
+  <span class="icon-lib">
+    <p><CIcon icon-name="choas-unlock" width="25" height="25"/></p>
+    <p>choas-unlock</p>
+  </span>
  
   
   <style>
