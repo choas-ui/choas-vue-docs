@@ -15,27 +15,27 @@
 ```html
     <template>
         <div>
-                <div>
-                    <p>值:{{value1}}</p>
-                    <CInput v-model="value1" />
-                </div>
-                <div>
-                    <p>值:{{value2}}</p>
-                    <CInput v-model="value2" size="small" />
-                </div>
-                <div>
-                    <p>值:{{value3}}</p>
-                    <CInput v-model="value3" size="ssmall" />
-                </div>
+            <div>
+                <p>值:{{value1}}</p>
+                <CInput v-model="value1" placeholder="v-model module" />
+            </div>
+            <div>
+                <p>值:{{value2}}</p>
+                <CInput v-model="value2" size="small" placeholder="v-model module" />
+            </div>
+            <div>
+                <p>值:{{value3}}</p>
+                <CInput v-model="value3" size="ssmall" placeholder="v-model module" />
+            </div>
         </div>
     </template>
     <script>
         export default {
             data(){
                 return {
-                    value1: 'helloworld!',
-                    value2: 'helloworld!',
-                    value3: 'helloworld!', 
+                    value1: 'helloWorld!',
+                    value2: 'helloWorld!',
+                    value3: 'helloWorld!', 
                 }
             }
         }
@@ -46,22 +46,31 @@
 #### type 类型
 ---
   <ul>
-    <li>仅仅支持text password 两种类型。如需其他类型，可以考虑使用其他组件。</li>
-    <li>仅仅在text模式下支持列表 多选。</li>
+    <li>支持text search password 三种类型。如需其他类型，可以考虑使用其他组件。</li>
+    <li>在text模式下支持列表多选。</li>
+    <li>仅在password模式下支持passwordReplacer,用于掩盖密码。</li>
   </ul>
   
 :::demo
 ```html
     <template>
         <div>
-                <div>
-                    <p>值:{{value1}}</p>
-                    <CInput v-model="value1" size="small" type="password" />
-                </div>
-                <div>
-                    <p>值:{{value2}}</p>
-                    <CInput v-model="value2" size="small" type="password" />
-                </div>
+            <div>
+                <p>值:{{value1}}</p>
+                <CInput v-model="value1" size="small" />
+            </div>
+            <div>
+                <p>值:{{value2}}</p>
+                <CInput v-model="value2" size="small" type="password" />
+            </div>
+            <div>
+                <p>值:{{value2}}</p>
+                <CInput v-model="value2"
+                        size="small"
+                        type="password"
+                        password-replacer="&hearts;"
+                />
+            </div>
         </div>
     </template>
     <script>
@@ -77,6 +86,8 @@
 ```
 :::
 
+#### 宽度 width
+---
 
 #### 尺寸 size
 ---
@@ -85,11 +96,11 @@
 ```html
     <template>
         <div>
-            <div><CInput size="llarge" placeholder="llarge input" /></div>
-            <div><CInput size="large" placeholder="large input" /></div>
-            <div><CInput placeholder="default input" /></div>
-            <div><CInput size="small" placeholder="small input" /></div>
-            <div><CInput size="ssmall" placeholder="ssmall input" /></div>
+            <div><CInput size="llarge" placeholder="llarge size input" /></div>
+            <div><CInput size="large" placeholder="large size input" /></div>
+            <div><CInput placeholder="default size input " /></div>
+            <div><CInput size="small" placeholder="small size input" /></div>
+            <div><CInput size="ssmall" placeholder="ssmall size input" /></div>
         </div>
     </template>
 ```
@@ -98,45 +109,70 @@
 
 #### 清除 clearable
 ---
-  <ul>
-    <li>清除用户输入</li>
-  </ul>  
 
 :::demo
 ```html
     <template>
         <div>
-                <div><CInput placeholder="default input" clearable /></div>
-                <div><CInput placeholder="default input" size="small" clearable /></div>
-                <div><CInput placeholder="default input" size="ssmall" clearable /></div>
+            <div><CInput placeholder="default size input" clearable /></div>
+            <div><CInput placeholder="default size input" size="small" clearable /></div>
+            <div><CInput placeholder="default size input" size="ssmall" clearable /></div>
         </div>
     </template>
 ```
 :::
 
-#### 前缀图标 prefix-icon
+#### 内前缀图标插槽和内后缀图标插槽 prefix-icon&behind-icon
 ---
   <ul>
-    <li>插槽。</li>
+    <li>内前缀图标插槽位置会出现在Input内部前方。</li>
+    <li>内后缀图标插槽位置会出现在Input内部后方，如果和clearable同时出现，会取消显示clearable。</li>
   </ul>  
 
 :::demo
 ```html
     <template>
         <div>
-            <CInput placeholder="default input" clearable >
-                <CIcon slot="prefix-icon"
-                       icon-name="choas-user"
-                       width="20"
-                       height="20"
-                       :style="{
-                            width:''     
-                       }"
-                />
-            </CInput>
-            <CInput placeholder="default input" size="small" clearable ></CInput>
-            <CInput placeholder="default input" size="ssmall" clearable ></CInput>
+            <div>
+                <CInput placeholder="default size input" clearable >
+                    <CIcon slot="prefix-icon"
+                           icon-name="choas-user"
+                           width="20"
+                           height="20"
+                           color="#aaa"
+                    />
+                </CInput>
+            </div>
+            <div>
+                <CInput placeholder="default size input" >
+                    <CIcon slot="behind-icon"
+                           icon-name="choas-setting"
+                           width="20"
+                           height="20"
+                           color="#aaa"
+                    />
+                </CInput>
+            </div>
+            <div>
+                <CInput placeholder="default size input" clearable>
+                    <CIcon slot="behind-icon"
+                           icon-name="choas-scanner"
+                           width="20"
+                           height="20"
+                           color="#aaa"
+                    />
+                </CInput>
+            </div>
         </div>
     </template>
 ```
 :::
+
+#### 长度限制 maxLength
+---
+
+#### 下拉列表 listData
+---
+
+#### 映射 reflectKey
+---

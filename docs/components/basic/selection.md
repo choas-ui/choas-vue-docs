@@ -29,3 +29,22 @@
     </script>
 ```
 :::
+
+#### 多选 multiple
+---
+  <ul>
+     <li>数据隔离。</li>
+  </ul>
+
+#### 分词函数 splitValueHandle
+---
+  <ul>
+     <li>多选生效</li>
+  </ul>
+
+#### 补全函数 autocompleteHandle
+---
+  <ul>
+     <li>多选生效</li>
+  </ul>
+
