@@ -544,7 +544,7 @@ export default {
 ```html
     <template>
         <p>{{ selectedData }}</p>
-        <input v-model="searchStr"/>
+        <CInput v-model="searchStr" size="small"/>
         <CTree
             :list-data="listData"
             v-model="selectedData"
