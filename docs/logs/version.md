@@ -17,6 +17,7 @@
      <li>新增<b>Icon</b>图标。</li>
      <li>修复<b>Tree</b>文件图标问题。</li>
      <li>修复<b>Modal</b>样式问题。</li>
+     <li>修改<b>Tree</b>的Input组件。</li>
   </ol>
 :::
 

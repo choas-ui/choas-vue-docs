@@ -404,7 +404,7 @@ export default {
         <p>{{ selectedData }}</p>
         <CTree
             :list-data="listData"
-            mark-icon-fix-margin-right="20"
+            :mark-icon-fix-margin-right="20"
             v-model="selectedData"
         >
             <CIcon
