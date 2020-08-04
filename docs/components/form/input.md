@@ -355,6 +355,12 @@
 ```
 :::
 
+#### 事件 event 
+---
+  <ul>
+    <li>支持input blur keydown change 四种事件</li>
+  </ul>
+
 #### 属性列表 props
 ---
   |属性|范围|类型|默认值|说明|
@@ -373,6 +379,11 @@
   |correctionTimeSpan|无|Number|1|number类型下，输入结束后自动修正数据的间隔|
   |noSearBtn|truthy falsy|Boolean|false|search模式下自动取消搜索按钮|
   |renderSearchBtn|无|Function|无|search模式下自定义搜索按钮|
+  |value|无|String|''|初始值与事件搭配|
+  |input|无|Function|无|返回value|
+  |blur|无|Function|无|返回value|
+  |keydown|无|Function|无|返回value|
+  |change|无|Function|无|返回value|
   
 
 #### 问答 QAQ
