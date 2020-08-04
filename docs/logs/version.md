@@ -8,6 +8,7 @@
   </p>
   
   <ol reversed>
+     <li>移除<b><s>CIcon</s></b>的fontSize属性，改为等高。</li>
      <li>新增<b>Input</b>组件。</li>
      <li>新增<b>Tree</b>展开状态替换图标。</li>
      <li>新增<b>Message</b>回调。</li>

@@ -425,40 +425,6 @@
 ```
 :::
 
-#### 字体图标大小 fontSize
----
-  <p>
-    仅在type为ft时生效
-  </p>
-
-:::demo
-```html
-<template>
-    <CIcon
-        font-class="fa fa-chrome"
-        color="green"
-        width="40"
-        height="40"
-        font-size="30"
-    />
-    <CIcon
-        font-class="fa fa-medkit"
-        color="#ff5e5c"
-        width="40"
-        height="40"
-        font-size="30"
-    />
-    <CIcon
-        font-class="fa fa-telegram"
-        color="#ff3677"
-        width="40"
-        height="40"
-        font-size="30"
-    />
-</template>
-```
-:::
-
 #### 来源 src
 ---
   <p>
