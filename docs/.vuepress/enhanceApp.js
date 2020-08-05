@@ -1,5 +1,5 @@
-// import choasUI from 'choas-vue'
-import choasUI from '../../../choas-vue/src/lib'
+import choasUI from 'choas-vue'
+// import choasUI from '../../../choas-vue/src/lib'
 
 export default ({
                     Vue, // the version of Vue being used in the VuePress app
