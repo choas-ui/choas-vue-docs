@@ -1,4 +1,3 @@
-const path = require('path')
 
 module.exports = {
     title: 'Choas-vue',
@@ -178,7 +177,6 @@ module.exports = {
     plugins: [
         [
             'vuepress-plugin-demo-container'
-        ],
+        ]
     ]
-}
-
+};
