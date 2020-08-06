@@ -2,10 +2,6 @@
 ---
   <ul>
     <li>用于用户输入。</li>
-    <li>一般显示的Input。</li>
-    <li>带有listData的 渲染下拉框。</li>
-    <li>带有search 提供搜索功能。</li>
-    <li>带有multiple 提供多选功能。</li>
   </ul>
 
 #### 双向绑定 v-model
@@ -273,6 +269,7 @@
     <li>search模式。</li>
     <li>按钮可以通过noSearBtn取消。</li>
     <li>自定义按钮renderSearchBtn。</li>
+    <li>search事件触发默认行为。</li>
   </ul>
 
 :::demo
@@ -283,6 +280,7 @@
                 <p>值:{{value1}}</p>
                 <CInput v-model="value1"
                         type="search"
+                         @search="searchHandle(this.value1)"
                 />
             </div>
             <div>
@@ -303,7 +301,7 @@
                         width="20"
                         height="20"
                         color="#aaa"
-                        @click="searchHandle"
+                        @click="searchHandle(this.value3)"
                     />
                 </CInput>
             </div>
@@ -327,8 +325,8 @@
                 }
             },
             methods:{
-                searchHandle(){
-                    alert('searchValue: '+ this.value3);
+                searchHandle(value){
+                    alert('searchValue: '+ value);
                 },
                 renderSearchBtn(h){
                     return h('a', {
@@ -388,10 +386,16 @@
 ```
 :::
 
+#### 补全字符和补全字符函数 autocomplete&autocompleteHandle
+---
+  <ul>
+     <li>单选情况下的补全字符和补全字符函数。</li>
+  </ul>
+
 #### 事件 event 
 ---
   <ul>
-    <li>支持input blur keydown change 四种事件</li>
+    <li>支持input change focus blur keyup 五种事件</li>
   </ul>
 
 #### 属性列表 props
@@ -415,8 +419,9 @@
   |renderSearchBtn|无|Function|无|search模式下自定义搜索按钮|
   |value|无|String|''|初始值与事件搭配|
   |input|无|Function|无|返回value|
+  |focus|无|Function|无|返回value|
   |blur|无|Function|无|返回value|
-  |keydown|无|Function|无|返回value|
+  |keyup|无|Function|无|返回value|
   |change|无|Function|无|返回value|
   
 

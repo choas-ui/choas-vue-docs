@@ -8,6 +8,10 @@
   </p>
   
   <ol reversed>
+     <li>新增<b>Selection</b>分词功能。</li>
+     <li>新增<b>Selection</b>多选模式。</li>
+     <li>新增<b>Input</b>keyup事件。</li>
+     <li>新增<b>Input</b>search事件。</li>
      <li>新增<b>Input</b>textArea模式。</li>
      <li>修复<b>TreeModal</b>双向绑定问题。</li>
      <li>修复<b>Input</b>bug。</li>
