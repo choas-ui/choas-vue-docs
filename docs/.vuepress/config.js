@@ -1,5 +1,5 @@
 module.exports = {
-    base:'/vue',
+    base:'/vue/',
     title: 'Choas-vue',
     description: 'Choas Choas and more',
     head: [
