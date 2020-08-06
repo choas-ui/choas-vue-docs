@@ -8,9 +8,9 @@
   </p>
   
   <ol reversed>
-     <li>待新增<b>Input</b>textArea模式。</li>
-     <li>待修复<b>InputTreeModal</b>双向绑定问题。</li>
-     <li>待修复<b>Input</b>删除时全部删除的问题。</li>
+     <li>新增<b>Input</b>textArea模式。</li>
+     <li>修复<b>TreeModal</b>双向绑定问题。</li>
+     <li>修复<b>Input</b>bug。</li>
   </ol>
 :::
 
