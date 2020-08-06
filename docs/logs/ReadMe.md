@@ -3,7 +3,7 @@
 
 :::tip 版本更新
   <p class="logs-version-item">
-    <span>2020-08-03</span>
+    <span>2020-08-07</span>
     <b>v 0.1.53</b>
   </p>
   
@@ -22,7 +22,7 @@
   
   <ol reversed>
      <li>移除<b><s>CIcon</s></b>的fontSize属性，改为等高。</li>
-     <li>新增<b>Input</b>组件。</li>
+     <li>重写<b>Input</b>组件逻辑。</li>
      <li>新增<b>Tree</b>展开状态替换图标。</li>
      <li>新增<b>Message</b>回调。</li>
      <li>新增<b>Message</b>图标功能。</li>
