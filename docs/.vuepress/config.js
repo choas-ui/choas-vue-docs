@@ -1,5 +1,5 @@
-
 module.exports = {
+    base:'/vue',
     title: 'Choas-vue',
     description: 'Choas Choas and more',
     head: [
@@ -10,7 +10,7 @@ module.exports = {
             {text: '首页', link: '/'},
             {text: '组件', link: '/components/'},
             {text: '日志', link: '/logs/'},
-            {text: '工程', link: '/project/'},
+            {text: '工程', link: '/https://github.com/choas-ui/choas-vue-pro/'},
             {text: 'issues', link: 'https://github.com/choas-ui/choas-vue/issues'},
             {text: 'GitHub', link: 'https://github.com/choas-ui/choas-vue'}
         ],
@@ -20,7 +20,7 @@ module.exports = {
                 ['/components/', '概述'],
                 {
                     title: '组件',
-                    children:[
+                    children: [
                         {
                             title: '表格',
                             children: [
@@ -31,7 +31,7 @@ module.exports = {
                         },
                         {
                             title: '表单',
-                            children:[
+                            children: [
                                 [
                                     '/components/form/radio', '单选框 CRadio'
                                 ],
@@ -155,23 +155,12 @@ module.exports = {
                             ]
                         }
                     ]
-                }
-            ],
-            '/logs':[
-                ['/logs/', '概述'],
+                },
                 {
-                    title: '迭代日志',
-                    children: [
-                        ['/logs/version', '日志'],
-                    ]
-                }
+                    title: '版本',
+                    path: '/logs/'
+                },
             ],
-            '/project':[
-                {
-                    title: '工程*',
-                    children: []
-                }
-            ]
         }
     },
     plugins: [

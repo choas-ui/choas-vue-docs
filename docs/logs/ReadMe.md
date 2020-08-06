@@ -4,6 +4,19 @@
 :::tip 版本更新
   <p class="logs-version-item">
     <span>2020-08-03</span>
+    <b>v 0.1.53</b>
+  </p>
+  
+  <ol reversed>
+     <li>待新增<b>Input</b>textArea模式。</li>
+     <li>待修复<b>InputTreeModal</b>双向绑定问题。</li>
+     <li>待修复<b>Input</b>删除时全部删除的问题。</li>
+  </ol>
+:::
+
+:::tip 版本更新
+  <p class="logs-version-item">
+    <span>2020-08-05</span>
     <b>v 0.1.52</b>
   </p>
   

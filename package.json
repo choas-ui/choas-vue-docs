@@ -3,12 +3,11 @@
   "version": "0.1.0",
   "private": false,
   "scripts": {
-    "docs": "vuepress dev docs --no-cache",
+    "serve": "vuepress dev docs --no-cache",
     "build": "vuepress build docs"
   },
   "devDependencies": {
     "choas-vue": "^0.1.52",
-    "eslint": "^6.8.0",
     "less-loader": "^6.2.0",
     "style-loader": "^1.2.1",
     "vuepress": "^1.5.2",
