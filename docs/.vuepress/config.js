@@ -45,7 +45,7 @@ module.exports = {
                                 '/components/form/input', '输入框 CInput'
                             ],
                             [
-                                '/components/form/selection', '下拉框* CSelection'
+                                '/components/form/selection', '下拉框 CSelection'
                             ],
                         ]
                     },

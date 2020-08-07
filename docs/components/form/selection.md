@@ -21,12 +21,18 @@
             name: 'SomeComponent',
             data(){
                 return {
-                    listData: [
-                        {key: '苹果', value: 'app'},
-                        {key: '橘子', value: 'org'},
-                        {key: '香蕉', value: 'ban'},
-                    ],
-                    selectedValue: [{key: '苹果', value: 'app'}],
+                    listData: [],
+                    selectedValue: [],
+                }
+            },
+            created(){
+                this.$set(this, 'listData', this.createData());
+                this.$set(this, 'selectedValue', [this.listData[0]]);
+            },       
+            methods:{
+                createData(){
+                    const str ='0123456789';
+                    return Array.from(str).map(item=>({key: item, value: item}))
                 }
             }
         }
@@ -56,29 +62,18 @@
             name: 'SomeComponent',
             data(){
                 return {
-                    listData: [
-                        {key: 'A', value: 'A'},
-                        {key: 'B', value: 'B'},
-                        {key: 'C', value: 'C'},
-                        {key: 'D', value: 'D'},
-                        {key: 'E', value: 'E'},
-                        {key: 'F', value: 'F'},
-                        {key: 'G', value: 'G'},
-                        {key: 'H', value: 'H'},
-                        {key: 'I', value: 'I'},
-                        {key: 'J', value: 'J'},
-                        {key: 'K', value: 'K'},
-                        {key: 'L', value: 'L'},
-                        {key: 'M', value: 'M'},
-                        {key: 'N', value: 'N'},
-                        {key: 'O', value: 'O'},
-                        {key: 'P', value: 'P'},
-                        {key: 'Q', value: 'Q'},
-                        {key: 'R', value: 'R'},
-                        {key: 'S', value: 'S'},
-                        {key: 'T', value: 'T'},
-                    ],
-                    selectedValue: [{key: 'A', value: 'A'}],
+                    listData: [],
+                    selectedValue: [],
+                }
+            },
+            created(){
+                this.$set(this, 'listData', this.createData());
+                this.$set(this, 'selectedValue', [this.listData[0]]);
+            },       
+            methods:{
+                createData(){
+                    const str ='ABCDEFGHIJKLMNOPQRSTUVWXYZ';
+                    return Array.from(str).map(item=>({key: item, value: item}))
                 }
             }
         }
@@ -93,6 +88,7 @@
         <div>
             <CSelection :list-data="listData"
                         v-model="selectedValue"
+                        placeholder="请选择"
                         size="small"
                         multiple
              />
@@ -103,29 +99,18 @@
             name: 'SomeComponent',
             data(){
                 return {
-                    listData: [
-                        {key: 'A', value: 'A'},
-                        {key: 'B', value: 'B'},
-                        {key: 'C', value: 'C'},
-                        {key: 'D', value: 'D'},
-                        {key: 'E', value: 'E'},
-                        {key: 'F', value: 'F'},
-                        {key: 'G', value: 'G'},
-                        {key: 'H', value: 'H'},
-                        {key: 'I', value: 'I'},
-                        {key: 'J', value: 'J'},
-                        {key: 'K', value: 'K'},
-                        {key: 'L', value: 'L'},
-                        {key: 'M', value: 'M'},
-                        {key: 'N', value: 'N'},
-                        {key: 'O', value: 'O'},
-                        {key: 'P', value: 'P'},
-                        {key: 'Q', value: 'Q'},
-                        {key: 'R', value: 'R'},
-                        {key: 'S', value: 'S'},
-                        {key: 'T', value: 'T'},
-                    ],
-                    selectedValue: [{key: 'A', value: 'A'}],
+                    listData: [],
+                    selectedValue: [],
+                }
+            },
+            created(){
+                this.$set(this, 'listData', this.createData());
+                this.$set(this, 'selectedValue', [this.listData[0]]);
+            },       
+            methods:{
+                createData(){
+                    const str ='ABCDEFGHIJKLMNOPQRSTUVWXYZ';
+                    return Array.from(str).map(item=>({key: item, value: item}))
                 }
             }
         }
@@ -136,6 +121,66 @@
 #### 分词和分词函数 splitText&splitHandle
 ---
   <ul>
-     <li>多选生效</li>
+     <li>多选生效时生效。</li>
+     <li>按下回车键自动向选中内容添加该选项，key和value相同。</li>
+  </ul>
+  
+:::demo
+```html
+    <template>
+        <p>{{selectedValue}}</p>   
+        <div>
+            <CSelection :list-data="listData"
+                        v-model="selectedValue"
+                        placeholder="请选择"
+                        size="small"
+                        multiple
+             />
+        </div>   
+    </template>
+    <script>
+        export default {
+            name: 'SomeComponent',
+            data(){
+                return {
+                    listData: [],
+                    selectedValue: [],
+                }
+            },
+            created(){
+                this.$set(this, 'listData', this.createData());
+                this.$set(this, 'selectedValue', [this.listData[0]]);
+            },       
+            methods:{
+                createData(){
+                    const str ='ABCDEFGHIJKLMNOPQRSTUVWXYZ';
+                    return Array.from(str).map(item=>({key: item, value: item}))
+                }
+            }
+        }
+    </script>
+```
+:::
+
+
+#### 属性列表 props
+---
+  |属性|范围|类型|默认值|说明|
+  |:-:|:---:|---|---|:---|
+  |size|'ssmall' 'small' 'default' 'large' 'llarge'| String | 'default'|按钮内边距|
+  |placeholder|无|String|无|提供一个悬停时的说明文字|
+  |class-name|无|String|无|组件最外层添加一个新的类名|
+  |prefix|无|String|无|是否在该组件所有类前加前缀|
+
+#### 问答 QAQ
+---
+  <ul>
+    <li><b>Q:</b></li>
+    <li><b>A:</b></li>
   </ul>
 
+#### 归类 Answer
+---
+  <ul>
+    <li><b>Q:</b></li>
+  </ul>

@@ -386,11 +386,116 @@
 ```
 :::
 
+#### 备选列表 listData
+---
+  <ul>
+     <li>提供备选列表。</li>
+  </ul>
+  
+:::demo
+```html
+    <template>
+        <div>
+            <div>
+                <p>值:{{value1}}</p>
+                <CInput v-model="value1"
+                        :list-data="listData"
+                />
+            </div>
+        </div>
+    </template>
+    <script>
+        export default {
+            data(){
+                return {
+                    value1: '',
+                    listData: [],
+                }
+            },
+            created(){
+                this.$set(this, 'listData', this.createData());
+            },       
+            methods:{
+                createData(){
+                    const str ='ABCDEFGHIJKLMNOPQRSTUVWXYZ';
+                    return Array.from(str);
+                }
+            }
+        }
+    </script>
+```
+:::
+
 #### 补全字符和补全字符函数 autocomplete&autocompleteHandle
 ---
   <ul>
-     <li>单选情况下的补全字符和补全字符函数。</li>
+     <li>补全字符和补全字符函数。</li>
   </ul>
+  
+:::demo
+```html
+    <template>
+        <div>
+            <div>
+                <p>值:{{value1}}</p>
+                <CInput v-model="value1"
+                        autocomplete="@choas.com"
+                        placeholder="autocomplete"
+                />
+            </div>
+        </div>
+    </template>
+    <script>
+        export default {
+            data(){
+                return {
+                    value1: '',
+                }
+            }
+        }
+    </script>
+```
+:::
+
+:::demo
+```html
+    <template>
+        <div>
+            <div>
+                <p>值:{{value1}}</p>
+                <CInput v-model="value1"
+                        :autocomplete-handle="autocompleteHandle"
+                        placeholder="autocompleteHandle"
+                />
+            </div>
+        </div>
+    </template>
+    <script>
+        export default {
+            data(){
+                return {
+                    value1: '',
+                }
+            },
+            methods:{
+                autocompleteHandle(v){
+                    return v.split(' ').map(item=>{
+                        const str1 = '@choas.com';
+                        const str2 = '@order.com';
+                        const condition = item.indexOf(str1)>-1 || item.indexOf(str2)>-1;
+                        if(item.length>3){
+                            return condition? item: item + str1 ;
+                        }
+                        if(item.length<=3 && item.length>0){
+                            return condition? item: item + str2 ;
+                        }
+                    }).filter(Boolean);
+                }
+            }
+        }
+    </script>
+```
+:::
 
 #### 事件 event 
 ---
