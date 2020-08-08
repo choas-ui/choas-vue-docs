@@ -158,12 +158,14 @@
             :value="24"
             :barConfig="barConfig1"
             color="#fff"
+            :time-span="0.5"
             ></CProgress>
     <br/>
     <CProgress height="18"
             :value="18"
             :barConfig="barConfig2"
             color="#fff"
+            :time-span="0.8"
             ></CProgress>
     <br/>
     <CProgress height="18"
