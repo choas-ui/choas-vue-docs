@@ -21,41 +21,6 @@ module.exports = {
                 title: '组件',
                 children: [
                     {
-                        title: '表格',
-                        children: [
-                            [
-                                '/components/table/table', '表格* CTable'
-                            ],
-                        ]
-                    },
-                    {
-                        title: '表单',
-                        path: '/components/form/',
-                        children: [
-                            [
-                                '/components/form/checkbox', '复选框 CCheckbox'
-                            ],
-                            [
-                                '/components/form/form', '表单* CFrom'
-                            ],
-                            [
-                                '/components/form/radio', '单选框 CRadio'
-                            ],
-                            [
-                                '/components/form/input', '输入框 CInput'
-                            ],
-                            [
-                                '/components/form/selection', '下拉框 CSelection'
-                            ],
-                            [
-                                '/components/form/selectTree', '树形选择器* CSelectTree'
-                            ],
-                            [
-                                '/components/form/uploader', '上传文件* CUploader'
-                            ],
-                        ]
-                    },
-                    {
                         title: '基础组件',
                         path: '/components/basic/',
                         children: [
@@ -110,6 +75,64 @@ module.exports = {
                         ]
                     },
                     {
+                        title: '定制组件',
+                        children: [
+                            [
+                                '/components/custom/checkboxCascade', '多选级联* CCheckboxCascade'
+                            ],
+                            [
+                                '/components/custom/inputCascade', 'input级联* CInputCascade'
+                            ],
+                            [
+                                '/components/custom/inputTreeModal', 'input树形弹窗 CInputTreeModal'
+                            ],
+                            [
+                                '/components/custom/quickSearchBox', '快搜条件筛选* CQuickSearchBox'
+                            ],
+                        ]
+                    },
+                    {
+                        title: '表格',
+                        children: [
+                            [
+                                '/components/table/table', '表格* CTable'
+                            ],
+                        ]
+                    },
+                    {
+                        title: '表单',
+                        path: '/components/form/',
+                        children: [
+                            [
+                                '/components/form/checkbox', '复选框 CCheckbox'
+                            ],
+                            [
+                                '/components/form/datePicker', '时间选择器* CDatePicker'
+                            ],
+                            [
+                                '/components/form/form', '表单* CFrom'
+                            ],
+                            [
+                                '/components/form/radio', '单选框 CRadio'
+                            ],
+                            [
+                                '/components/form/input', '输入框 CInput'
+                            ],
+                            [
+                                '/components/form/selection', '下拉框 CSelection'
+                            ],
+                            [
+                                '/components/form/selectTree', '树形选择器* CSelectTree'
+                            ],
+                            [
+                                '/components/form/switch', '开关* CSwitch'
+                            ],
+                            [
+                                '/components/form/uploader', '上传文件* CUploader'
+                            ],
+                        ]
+                    },
+                    {
                         title: '结构组件',
                         path: '/components/structure/',
                         children: [
@@ -136,23 +159,6 @@ module.exports = {
                             ],
                         ]
                     },
-                    {
-                        title: '定制组件',
-                        children: [
-                            [
-                                '/components/custom/checkboxCascade', '多选级联* CCheckboxCascade'
-                            ],
-                            [
-                                '/components/custom/inputCascade', 'input级联* CInputCascade'
-                            ],
-                            [
-                                '/components/custom/inputTreeModal', 'input树形弹窗 CInputTreeModal'
-                            ],
-                            [
-                                '/components/custom/quickSearchBox', '快搜条件筛选* CQuickSearchBox'
-                            ],
-                        ]
-                    }
                 ]
             },
             {

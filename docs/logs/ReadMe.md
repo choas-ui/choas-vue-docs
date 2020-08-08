@@ -3,11 +3,12 @@
 
 :::tip 版本更新
   <p class="logs-version-item">
-    <span>2020-08-07</span>
+    <span>2020-08-08</span>
     <b>v 0.1.53</b>
   </p>
   
   <ol reversed>
+     <li>新增<b>DatePicker</b>组件。</li>
      <li>新增<b>SelectTree</b>组件。</li>
      <li>新增Selection 分词功能。</li>
      <li>新增Selection 多选模式。</li>
@@ -28,16 +29,16 @@
   </p>
   
   <ol reversed>
-     <li>移除<b><s>CIcon</s></b>的fontSize属性，改为等高。</li>
-     <li>重写<b>Input</b>组件逻辑。</li>
-     <li>新增<b>Tree</b>展开状态替换图标。</li>
-     <li>新增<b>Message</b>回调。</li>
-     <li>新增<b>Message</b>图标功能。</li>
-     <li>新增<b>Message</b>字体颜色。</li>
-     <li>新增<b>Icon</b>图标。</li>
-     <li>修复<b>Tree</b>文件图标bug。</li>
-     <li>修复<b>Modal</b>样式bug。</li>
-     <li>修改<b>Tree</b>的Input组件。</li>
+     <li>移除<s>CIcon</s>的fontSize属性，改为等高。</li>
+     <li>重写Input 组件逻辑。</li>
+     <li>新增Tree 展开状态替换图标。</li>
+     <li>新增Message 回调。</li>
+     <li>新增Message 图标功能。</li>
+     <li>新增Message 字体颜色。</li>
+     <li>新增Icon 图标。</li>
+     <li>修复Tree 文件图标bug。</li>
+     <li>修复Modal 样式bug。</li>
+     <li>修改Tree 的Input组件。</li>
   </ol>
 :::
 
@@ -49,11 +50,11 @@
   
   <ol reversed>
      <li>引入部分矢量图标。</li>
-     <li><b>Prompt</b>组件函数化。</li>
+     <li>Prompt 组件函数化。</li>
      <li>新增<b>Message</b>组件。</li>
      <li>新增<b>Prompt</b>组件。</li>
-     <li>新增<b>Tree</b>组件中多选框选项。</li>
-     <li>新增<b>Tree</b>组件中可变标题可变背景选项。</li>
+     <li>新增Tree 组件中多选框选项。</li>
+     <li>新增Tree 组件中可变标题可变背景选项。</li>
      <li>新增<b>RadioGroup</b>组件。</li>
      <li>新增<b>Radio</b>组件。</li>
      <li>新增Tree右侧controllers按钮功能。</li>
