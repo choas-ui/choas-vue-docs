@@ -143,7 +143,7 @@
             name: 'SomeComponent',
             data(){
                 return {
-                    listData: [],
+                    listData: [],         
                     selectedValue: [],
                 }
             },

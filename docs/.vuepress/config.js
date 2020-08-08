@@ -47,6 +47,12 @@ module.exports = {
                             [
                                 '/components/form/selection', '下拉框 CSelection'
                             ],
+                            [
+                                '/components/form/selectTree', '树形选择器* CSelectTree'
+                            ],
+                            [
+                                '/components/form/uploader', '上传文件* CUploader'
+                            ],
                         ]
                     },
                     {
@@ -89,7 +95,9 @@ module.exports = {
                             [
                                 '/components/basic/skeleton', '骨架屏* CSkeleton'
                             ],
-
+                            [
+                                '/components/basic/steps', '步骤条* CSteps'
+                            ],
                             [
                                 '/components/basic/tag', '标签 CTag'
                             ],
@@ -121,19 +129,10 @@ module.exports = {
                                 '/components/structure/pagination', '分页* CPagination'
                             ],
                             [
-                                '/components/structure/selectTree', '树形选择器* CSelectTree'
-                            ],
-                            [
                                 '/components/structure/shuttle', '穿梭框* CShuttle'
                             ],
                             [
-                                '/components/structure/steps', '步骤条* CSteps'
-                            ],
-                            [
                                 '/components/structure/treeModal', '树形弹框* CTreeModal'
-                            ],
-                            [
-                                '/components/structure/uploader', '上传文件* CUploader'
                             ],
                         ]
                     },
