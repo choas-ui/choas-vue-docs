@@ -54,6 +54,11 @@
 ```
 :::
 
+#### 宽度百分比 widthPercent
+  <ul>
+    <li>占据页面宽度百分比。</li>
+  </ul>
+
 #### 图标与颜色 iconName&iconColor
 ---
   <ul>
@@ -126,6 +131,7 @@
   |fontClass|无| String| 无|Icon的属性|
   |src|无| String| 无|Icon的属性|
   |iconColor|无| String | 无 |默认与当前提示类型对应颜色一致|
+  |widthPercent|无| String | 30 |占据宽度百分比|
   |click|无|Function|无|提示结束后的回调|
   |class-name|无|String|无|组件最外层添加一个新的类名|
   |prefix|无|String|无|是否在该组件所有类前加前缀|
