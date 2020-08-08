@@ -8,13 +8,16 @@
   </p>
   
   <ol reversed>
-     <li>新增<b>Selection</b>分词功能。</li>
-     <li>新增<b>Selection</b>多选模式。</li>
-     <li>新增<b>Input</b>keyup事件。</li>
-     <li>新增<b>Input</b>search事件。</li>
-     <li>新增<b>Input</b>textArea模式。</li>
-     <li>修复<b>TreeModal</b>双向绑定问题。</li>
-     <li>修复<b>Input</b>bug。</li>
+     <li>新增<b>SelectTree</b>组件。</li>
+     <li>新增Selection 分词功能。</li>
+     <li>新增Selection 多选模式。</li>
+     <li>新增Prompt icon功能。</li>
+     <li>新增Input keyup事件。</li>
+     <li>新增Input search事件。</li>
+     <li>新增Input textArea模式。</li>
+     <li>修复Prompt 位置判断重定位bug。</li>
+     <li>修复TreeModal 双向绑定bug。</li>
+     <li>修复Input bug。</li>
   </ol>
 :::
 
@@ -32,8 +35,8 @@
      <li>新增<b>Message</b>图标功能。</li>
      <li>新增<b>Message</b>字体颜色。</li>
      <li>新增<b>Icon</b>图标。</li>
-     <li>修复<b>Tree</b>文件图标问题。</li>
-     <li>修复<b>Modal</b>样式问题。</li>
+     <li>修复<b>Tree</b>文件图标bug。</li>
+     <li>修复<b>Modal</b>样式bug。</li>
      <li>修改<b>Tree</b>的Input组件。</li>
   </ol>
 :::
@@ -57,7 +60,7 @@
      <li>修改Tree搜索逻辑。</li>
      <li>修改Tree默认值控制双向绑定的选取逻辑。</li>
      <li>修改Button阴影。</li>
-     <li>修复直接操作选取值导致的无法编辑问题。</li>
+     <li>修复直接操作选取值导致的无法编辑bug。</li>
      <li>修复Checkbox不显示激活样式bug。</li>
   </ol>
 :::

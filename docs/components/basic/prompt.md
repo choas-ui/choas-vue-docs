@@ -75,6 +75,26 @@
 :::
 
 
+#### 图标&&图标颜色 iconName&&iconColor
+----   
+  <ul>
+    <li>设定提示图标和颜色。</li>
+  </ul>
+
+:::demo
+```html
+    <template>
+        <CPrompt dialog="你点击了提示……"
+                 place-setting="left-top"
+                 icon-name="choas-warning"
+                 icon-color="#ffbb50"
+        >
+            <CButton size="ssmall">left-top</CButton>
+        </CPrompt>
+    </template>
+``` 
+:::
+
 #### 确认和取消 confirm&cancel
 ----   
   <ul>

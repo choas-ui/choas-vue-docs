@@ -78,8 +78,8 @@
 #### 更多属性
 ---
 
-:::danger 注意
-  目前支持大部分Tree的树形，插槽除外。
+:::tip notice
+  支持Tree组件相关的属性与方法
 :::
 
 :::demo
@@ -97,7 +97,12 @@
                         :file-icon-fix-margin-right="20"
                         line
                         :edit-tree-node="editTreeNode"
-             />
+             >
+                 <CIcon
+                    slot="file-icon"
+                    icon-name="choas-lists"
+                 />
+            </CSelection>
         </div>   
     </template>
 <script>
