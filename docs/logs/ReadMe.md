@@ -16,6 +16,7 @@
      <li>新增Input keyup事件。</li>
      <li>新增Input search事件。</li>
      <li>新增Input textArea模式。</li>
+     <li>修复Icon 图标位置。</li>
      <li>修复Prompt 位置判断重定位bug。</li>
      <li>修复TreeModal 双向绑定bug。</li>
      <li>修复Input bug。</li>

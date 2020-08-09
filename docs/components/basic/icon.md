@@ -328,7 +328,17 @@
     <p><CIcon icon-name="choas-unlock" width="25" height="25"/></p>
     <p>choas-unlock</p>
   </span>
- 
+  <span class="icon-lib">
+    <p><CIcon icon-name="choas-clock" width="25" height="25"/></p>
+    <p>choas-clock</p>
+  </span>
+  <span class="icon-lib">
+    <p><CIcon icon-name="choas-fill-clock" width="25" height="25"/></p>
+    <p>choas-fill-clock</p>
+  </span>
+  
+  
+  
   
   <style>
     .icon-lib{

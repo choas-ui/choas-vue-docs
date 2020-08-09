@@ -17,18 +17,60 @@
 ::: demo
 ```html
 <template>
-    <CDatePicker :log="log" />
+    <CDatePicker />
 </template>    
 <script>
     export default {
         name: 'demo1',
         data(){
             return {
-                log: ()=>console.log(123)
             }
         },
         mounted() {
-            this.log = () => console.log(456)
+        },
+    }
+</script>
+```
+:::
+
+#### 宽度 width
+---
+
+::: demo
+```html
+<template>
+    <CDatePicker width="100" />
+</template>    
+<script>
+    export default {
+        name: 'demo1',
+        data(){
+            return {
+            }
+        },
+        mounted() {
+        },
+    }
+</script>
+```
+:::
+
+#### 大小 size
+---
+
+::: demo
+```html
+<template>
+    <CDatePicker size="small" />
+</template>    
+<script>
+    export default {
+        name: 'demo1',
+        data(){
+            return {
+            }
+        },
+        mounted() {
         },
     }
 </script>
