@@ -73,6 +73,22 @@
     <p>choas-fill-arrow-left</p>
   </span>
   <span class="icon-lib">
+    <p><CIcon icon-name="choas-double-left" width="25" height="25"/></p>
+    <p>choas-double-left</p>
+  </span>
+  <span class="icon-lib">
+    <p><CIcon icon-name="choas-double-right" width="25" height="25"/></p>
+    <p>choas-double-right</p>
+  </span>
+  <span class="icon-lib">
+    <p><CIcon icon-name="choas-lots-left" width="25" height="25"/></p>
+    <p>choas-lots-left</p>
+  </span>
+  <span class="icon-lib">
+    <p><CIcon icon-name="choas-lots-right" width="25" height="25"/></p>
+    <p>choas-lots-right</p>
+  </span>
+  <span class="icon-lib">
     <p><CIcon icon-name="choas-file-icon" width="25" height="25"/></p>
     <p>choas-file-icon</p>
   </span>
@@ -336,6 +352,7 @@
     <p><CIcon icon-name="choas-fill-clock" width="25" height="25"/></p>
     <p>choas-fill-clock</p>
   </span>
+  
   
   
   
