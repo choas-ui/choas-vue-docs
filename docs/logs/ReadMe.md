@@ -16,6 +16,7 @@
      <li>新增Input keyup事件。</li>
      <li>新增Input search事件。</li>
      <li>新增Input textArea模式。</li>
+     <li>修复Tree 折线层级显示问题。</li>
      <li>修复Icon 图标位置。</li>
      <li>修复Prompt 位置判断重定位bug。</li>
      <li>修复TreeModal 双向绑定bug。</li>
@@ -206,7 +207,7 @@
   
   <ol reversed>
      <li>cascade搜索功能重写。</li>
-     <li>将cascade事件委托的恢复至<b>document</b>。</li>
+     <li>将cascade事件委托的恢复至 document。</li>
   </ol>
 :::
 
@@ -285,7 +286,7 @@
   </p>
   
   <ol reversed>
-     <li>Tree新增<b>controllers</b>选项。</li>
+     <li>Tree新增 controllers 选项。</li>
   </ol>
 :::
 
@@ -478,7 +479,7 @@
   </p>
   
   <ol reversed>
-     <li>避免组件叠加影响，<b>所有组件</b>重命名。</li>
+     <li>避免组件叠加影响， 所有组件 重命名。</li>
   </ol>
 :::
 
@@ -489,7 +490,7 @@
   </p>
   
   <ol reversed>
-    <li>避免组件叠加影响，<b>所有组件</b>重命名。</li>
+    <li>避免组件叠加影响， 所有组件 重命名。</li>
   </ol>
 :::
 
@@ -544,7 +545,7 @@
   </p>
   
   <ol reversed>
-     <li>修复<b>TreeModal</b>组件bug。</li>
+     <li>修复 TreeModal 组件bug。</li>
   </ol>
 :::
 
