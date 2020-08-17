@@ -40,6 +40,10 @@
 ```html
 <template>
     <CDatePicker width="100" />
+    <br/>
+    <CDatePicker width="200" />
+    <br/>
+    <CDatePicker width="400" />
 </template>    
 <script>
     export default {
@@ -61,7 +65,11 @@
 ::: demo
 ```html
 <template>
-    <CDatePicker size="small" />
+    <CDatePicker size="ssmall" />
+    <br/>
+    <CDatePicker size="default" />
+    <br/>
+    <CDatePicker size="llarge" />
 </template>    
 <script>
     export default {
