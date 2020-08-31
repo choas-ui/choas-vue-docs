@@ -47,7 +47,7 @@
 </template>    
 <script>
     export default {
-        name: 'demo1',
+        name: 'demo2',
         data(){
             return {
             }
@@ -73,7 +73,33 @@
 </template>    
 <script>
     export default {
-        name: 'demo1',
+        name: 'demo3',
+        data(){
+            return {
+            }
+        },
+        mounted() {
+        },
+    }
+</script>
+```
+:::
+
+#### 快选按钮 quickSelectBox
+---
+
+::: demo
+```html
+<template>
+    <CDatePicker width="200" quickSelectBox />
+    <br/>
+    <CDatePicker width="200" size="small" quickSelectBox />
+    <br/>
+    <CDatePicker width="200" size="ssmall" quickSelectBox />
+</template>    
+<script>
+    export default {
+        name: 'demo4',
         data(){
             return {
             }
