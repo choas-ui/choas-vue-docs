@@ -17,7 +17,6 @@
         <div>
             <CSelection :list-data="listData"
                         v-model="selectedValue"
-
                         mode="tree"
                         multiple
                         checkbox
@@ -89,8 +88,8 @@
         <div>
             <CSelection :list-data="listData"
                         v-model="selectedValue"
-                        mode="tree"
                         multiple
+                        mode="tree"
 
                         checkbox
                         controllers
@@ -153,7 +152,7 @@
         editTreeNode(item, type){
             return new Promise(resolve => {
                 setTimeout(()=>{
-                    console.log(item, type, 123)
+                    console.log(item, type, 123);
                     resolve({code: 200})
                 },5000)
             }).then(res=>res)
