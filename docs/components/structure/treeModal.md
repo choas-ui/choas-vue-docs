@@ -51,6 +51,7 @@
                             {
                                 id: '014557484S-1',
                                 name: '后勤',
+                                expand: true,
                                 children: [
                                     {
                                         id: '014557484S-1-0017',
