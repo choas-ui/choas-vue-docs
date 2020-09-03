@@ -8,14 +8,19 @@
   </p>
   
   <ol reversed>
+     <li>新增<b>QuickSearchBox</b>组件。</li>
      <li>新增<b>DatePicker</b>组件。</li>
      <li>新增<b>SelectTree</b>组件。</li>
      <li>新增Selection 分词功能。</li>
      <li>新增Selection 多选模式。</li>
      <li>新增Prompt icon功能。</li>
-     <li>新增Input keyup事件。</li>
+     <li>新增Button link模式。</li>
+     <li>新增Input blur事件。</li>
      <li>新增Input search事件。</li>
      <li>新增Input textArea模式。</li>
+     <li>新增Input textArea模式。</li>
+     <li>新增Icon 图标。</li>
+     <li>修复RadioGroup 选择问题。</li>
      <li>修复Tree 折线层级显示问题。</li>
      <li>修复Icon 图标位置。</li>
      <li>修复Prompt 位置判断重定位bug。</li>

@@ -62,6 +62,7 @@
     <CButton type="danger">danger</CButton>
     <CButton type="disabled">disabled</CButton>
     <CButton type="ghost">ghost</CButton>
+    <CButton type="link">link</CButton>
   </template> 
 ```
 :::

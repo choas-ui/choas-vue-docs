@@ -73,13 +73,22 @@
     <p>choas-fill-arrow-left</p>
   </span>
   <span class="icon-lib">
-    <p><CIcon icon-name="choas-double-left" width="25" height="25"/></p>
-    <p>choas-double-left</p>
+    <p><CIcon icon-name="choas-double-top" width="25" height="25"/></p>
+    <p>choas-double-top</p>
   </span>
   <span class="icon-lib">
     <p><CIcon icon-name="choas-double-right" width="25" height="25"/></p>
     <p>choas-double-right</p>
   </span>
+  <span class="icon-lib">
+    <p><CIcon icon-name="choas-double-down" width="25" height="25"/></p>
+    <p>choas-double-down</p>
+  </span>
+  <span class="icon-lib">
+    <p><CIcon icon-name="choas-double-left" width="25" height="25"/></p>
+    <p>choas-double-left</p>
+  </span>
+
   <span class="icon-lib">
     <p><CIcon icon-name="choas-lots-left" width="25" height="25"/></p>
     <p>choas-lots-left</p>
