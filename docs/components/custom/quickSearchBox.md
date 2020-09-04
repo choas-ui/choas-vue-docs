@@ -85,7 +85,7 @@
     <template>
         <CQuickSearchBox :list-data="optionsData">
             <template slot="btn-box">
-                <div @click="click">123</div>
+                <div @click="click">自定义的按钮组</div>
             </template>
         </CQuickSearchBox>
     </template>
