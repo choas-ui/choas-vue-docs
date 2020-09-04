@@ -7,7 +7,7 @@
     <li>复杂模式中value为对象，由数据控制组件呈现。</li>
   </ul>
 
-### 简单模式
+### 简单模式 option
 ---
   <ul>
     <li>选择集合中的多个值。</li>
@@ -18,23 +18,23 @@
 <template>
     <p>{{ selectedData }}</p>
     <CCheckbox
-        value="a"
+        option="a"
         v-model="selectedData"
     />
     <CCheckbox
-        value="b"
+        option="b"
         v-model="selectedData"
     />
     <CCheckbox
-        value="c"
+        option="c"
         v-model="selectedData"
     />
     <CCheckbox
-        value="d"
+        option="d"
         v-model="selectedData"
     />
     <CCheckbox
-        value="e"
+        option="e"
         v-model="selectedData"
     />
 </template>
@@ -61,17 +61,17 @@
 <template>
     <p>{{ selectedData }}</p>
     <CCheckbox
-        value="a"
+        option="a"
         disabled
         v-model="selectedData"
     />
     <CCheckbox
-        value="b"
+        option="b"
         disabled
         v-model="selectedData"
     />
     <CCheckbox
-        value="c"
+        option="c"
         disabled
         v-model="selectedData"
     />
@@ -100,18 +100,18 @@
 <template>
     <p>{{ selectedData }}</p>
     <CCheckbox
-        value="half-checked"
+        option="half-checked"
         half-checked
         v-model="selectedData"
     />
     <CCheckbox
-        value="half-checked disabled"
+        option="half-checked disabled"
         half-checked
         disabled
         v-model="selectedData"
     />
     <CCheckbox
-        value="empty"
+        option="empty"
         v-model="selectedData"
     />
 </template>
@@ -141,7 +141,7 @@
 <template>
     <p>{{ selectedData }}</p>
     <CCheckbox
-        value="checked-icon"
+        option="checked-icon"
         v-model="selectedData"
     >
         <CIcon icon-name="choas-add"
@@ -173,7 +173,7 @@
         />
     </CCheckbox>
     <CCheckbox
-        value="disabled-icon"
+        option="disabled-icon"
         disabled
         v-model="selectedData"
     >
@@ -206,7 +206,7 @@
         />
     </CCheckbox>
     <CCheckbox
-        value="half-checked-icon"
+        option="half-checked-icon"
         half-checked
         v-model="selectedData"
     >
@@ -266,23 +266,23 @@
 <template>
     <p>{{ selectedData }}</p>
     <CCheckbox
-        :value="{key: 'a', value: 'a'}"
+        :option="{key: 'a', value: 'a'}"
         v-model="selectedData"
     />
     <CCheckbox
-        :value="{key: 'b', value: 'b', halfChecked: true }"
+        :option="{key: 'b', value: 'b', halfChecked: true }"
         v-model="selectedData"
     />
     <CCheckbox
-        :value="{key: 'c', value: 'c', checked: true}"
+        :option="{key: 'c', value: 'c', checked: true}"
         v-model="selectedData"
     />
     <CCheckbox
-        :value="{key: 'd', value: 'd', disabled: true}"
+        :option="{key: 'd', value: 'd', disabled: true}"
         v-model="selectedData"
     />
     <CCheckbox
-        :value="{key: 'e', value: 'e', disabled: true, checked: true}"
+        :option="{key: 'e', value: 'e', disabled: true, checked: true}"
         v-model="selectedData"
     />
 </template>
@@ -309,19 +309,19 @@
 <template>
     <p>{{ selectedData }}</p>
     <CCheckbox
-        :value="{key: 'a', value: 'a'}"
+        :option="{key: 'a', value: 'a'}"
         v-model="selectedData"
     />
     <CCheckbox
-        :value="{key: 'b', value: 'b', halfChecked: true }"
+        :option="{key: 'b', value: 'b', halfChecked: true }"
         v-model="selectedData"
     />
     <CCheckbox
-        :value="{key: 'c', value: 'c', checked: true}"
+        :option="{key: 'c', value: 'c', checked: true}"
         v-model="selectedData"
     />
     <CCheckbox
-        :value="{name: 'laowang', id: '1268', checked: false}"
+        :option="{name: 'laowang', id: '1268', checked: false}"
         v-model="selectedData"
         :reflect-key="{key: 'name', value: 'id'}"
     />
@@ -461,15 +461,15 @@
     <p>{{ selectedData }}</p>
     <CCheckboxGroup>
          <CCheckbox
-           value="a"
+           option="a"
            v-model="selectedData"
          />
          <CCheckbox
-           value="b"
+           option="b"
            v-model="selectedData"
          />
          <CCheckbox
-           value="c"
+           option="c"
            v-model="selectedData"
          />
     </CCheckboxGroup>   
@@ -492,15 +492,15 @@
     <p>{{ selectedData }}</p>
     <CCheckboxGroup>
          <CCheckbox
-           :value="{key: 'a', value: 'a', checked: true}"
+           :option="{key: 'a', value: 'a', checked: true}"
            v-model="selectedData"
          />
          <CCheckbox
-           :value="{key: 'b', value: 'b'}"
+           :option="{key: 'b', value: 'b'}"
            v-model="selectedData"
          />
          <CCheckbox
-           :value="{key: 'c', value: 'c'}"
+           :option="{key: 'c', value: 'c'}"
            v-model="selectedData"
          />
     </CCheckboxGroup>   

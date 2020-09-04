@@ -4,16 +4,16 @@
     <li>在一组数据中选择一个。</li>
 </ul>
 
-### 简单模式
+### 简单模式 option
 --- 
 
 :::demo
 ```html
     <template>
         <p>{{ selectData }}</p>
-        <CRadio value="a" v-model="selectData" />
-        <CRadio value="b" v-model="selectData" />
-        <CRadio value="c" v-model="selectData" />
+        <CRadio option="a" v-model="selectData" />
+        <CRadio option="b" v-model="selectData" />
+        <CRadio option="c" v-model="selectData" />
     </template>
     <script>
         export default {
@@ -34,9 +34,9 @@
 ```html
     <template>
         <p>{{ selectData }}</p>
-        <CRadio value="a" disabled v-model="selectData" />
-        <CRadio value="b" disabled v-model="selectData" />
-        <CRadio value="c" disabled v-model="selectData" />
+        <CRadio option="a" disabled v-model="selectData" />
+        <CRadio option="b" disabled v-model="selectData" />
+        <CRadio option="c" disabled v-model="selectData" />
     </template>
     <script>
         export default {
@@ -62,7 +62,7 @@
 ```html
     <template>
         <p>{{ selectData }}</p>
-        <CRadio value="a" v-model="selectData" >
+        <CRadio option="a" v-model="selectData" >
             <CIcon icon-name="choas-selected"
                slot="selected-icon"
                color="green"
@@ -82,7 +82,7 @@
                }"
             />
         </CRadio>
-        <CRadio value="b" disabled v-model="selectData" >
+        <CRadio option="b" disabled v-model="selectData" >
             <CIcon icon-name="choas-selected"
                slot="selected-icon"
                color="green"
@@ -131,19 +131,19 @@
 <template>
     <p>{{ selectedData }}</p>
     <CRadio
-        :value="{key: 'a', value: 'a'}"
+        :option="{key: 'a', value: 'a'}"
         v-model="selectedData"
     />
     <CRadio
-        :value="{key: 'b', value: 'b'}"
+        :option="{key: 'b', value: 'b'}"
         v-model="selectedData"
     />
     <CRadio
-        :value="{key: 'c', value: 'c', disabled: true}"
+        :option="{key: 'c', value: 'c', disabled: true}"
         v-model="selectedData"
     />
     <CRadio
-        :value="{key: 'd', value: 'd', disabled: true, checked: true}"
+        :option="{key: 'd', value: 'd', disabled: true, checked: true}"
         v-model="selectedData"
     />
 </template>
@@ -170,19 +170,19 @@
 <template>
     <p>{{ selectedData }}</p>
     <CRadio
-        :value="{key: 'a', value: 'a'}"
+        :option="{key: 'a', value: 'a'}"
         v-model="selectedData"
     />
     <CRadio
-        :value="{key: 'b', value: 'b' }"
+        :option="{key: 'b', value: 'b' }"
         v-model="selectedData"
     />
     <CRadio
-        :value="{key: 'c', value: 'c', checked: true}"
+        :option="{key: 'c', value: 'c', checked: true}"
         v-model="selectedData"
     />
     <CRadio
-        :value="{name: 'laowang', id: '1268', checked: false}"
+        :option="{name: 'laowang', id: '1268', checked: false}"
         v-model="selectedData"
         :reflect-key="{key: 'name', value: 'id'}"
     />
@@ -328,15 +328,15 @@
     <p>{{ selectedData }}</p>
     <CRadioGroup>
          <CRadio
-           value="a"
+           option="a"
            v-model="selectedData"
          />
          <CRadio
-           value="b"
+           option="b"
            v-model="selectedData"
          />
          <CRadio
-           value="c"
+           option="c"
            v-model="selectedData"
          />
     </CRadioGroup>   
@@ -359,15 +359,15 @@
     <p>{{ selectedData }}</p>
     <CRadioGroup>
          <CRadio
-           :value="{key: 'a', value: 'a', checked: true}"
+           :option="{key: 'a', value: 'a', checked: true}"
            v-model="selectedData"
          />
          <CRadio
-           :value="{key: 'b', value: 'b'}"
+           :option="{key: 'b', value: 'b'}"
            v-model="selectedData"
          />
          <CRadio
-           :value="{key: 'c', value: 'c'}"
+           :option="{key: 'c', value: 'c'}"
            v-model="selectedData"
          />
     </CRadioGroup>   

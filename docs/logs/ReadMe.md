@@ -17,9 +17,11 @@
      <li>新增Button link模式。</li>
      <li>新增Input blur事件。</li>
      <li>新增Input search事件。</li>
-     <li>新增Input textArea模式。</li>
+     <li>新增Input change事件。</li>
      <li>新增Input textArea模式。</li>
      <li>新增Icon 图标。</li>
+     <li>新增RadioGroup Radio Checkbox CheckboxGroup中<b>option</b>设定选项对应value。</li>
+     <li>移除RadioGroup Radio Checkbox CheckboxGroup中<s>value</s>。</li>
      <li>修复RadioGroup 选择问题。</li>
      <li>修复Tree 折线层级显示问题。</li>
      <li>修复Icon 图标位置。</li>
