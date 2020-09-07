@@ -8,6 +8,7 @@
   </p>
   
   <ol reversed>
+     <li>新增<b>Switch</b>组件。</li>
      <li>新增<b>QuickSearchBox</b>组件。</li>
      <li>新增<b>DatePicker</b>组件。</li>
      <li>新增<b>SelectTree</b>组件。</li>

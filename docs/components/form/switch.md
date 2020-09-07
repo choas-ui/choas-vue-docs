@@ -78,24 +78,60 @@
 ```
 :::
 
-#### closeText & openText 状态文字
+#### openText & closeText 状态提示
 
 :::demo
 ```html
     <template>
         <CSwitch shape="circle" v-model="status" @click="click" closeText="关闭" openText="开启" />
         <br>
+        <CSwitch v-model="status2" @click="click2" closeText="关闭" openText="开启" />
    </template>
    <script>
         export default {
             data(){
                 return {
                     status: 'closing',
+                    status2: 'closing',
                 }
             },
             methods:{
                 click(){
                     this.status = this.status === 'closing'? 'opening':'closing';
+                },
+                click2(){
+                    this.status2 = this.status2 === 'closing'? 'opening':'closing';
+                }
+            }
+        }
+   </script>
+```
+:::
+
+
+#### openBg & closeBg 状态文字
+
+:::demo
+```html
+    <template>
+        <CSwitch shape="circle" v-model="status" @click="click" closeBg="#ff5e5c" openBg="#19B5FE" closeText="关闭" openText="开启" />
+        <br>
+        <CSwitch v-model="status2" @click="click2" closeBg="#ff5e5c" openBg="#19B5FE" closeText="关闭" openText="开启" />
+   </template>
+   <script>
+        export default {
+            data(){
+                return {
+                    status: 'closing',
+                    status2: 'closing',
+                }
+            },
+            methods:{
+                click(){
+                    this.status = this.status === 'closing'? 'opening':'closing';
+                },
+                click2(){
+                    this.status2 = this.status2 === 'closing'? 'opening':'closing';
                 }
             }
         }
