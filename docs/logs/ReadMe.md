@@ -4,6 +4,19 @@
 :::tip 版本更新
   <p class="logs-version-item">
     <span>2020-09-07</span>
+    <b>v 0.1.54</b>
+  </p>
+  
+  <ol reversed>
+     <li>新增<b>Switch</b>组件。</li>
+     <li>移除RadioGroup Radio Checkbox CheckboxGroup中<s>value</s>。</li>
+     <li>修复Tree Checkbox问题。</li>
+  </ol>
+:::
+
+:::tip 版本更新
+  <p class="logs-version-item">
+    <span>2020-09-07</span>
     <b>v 0.1.53</b>
   </p>
   
