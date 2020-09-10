@@ -3,14 +3,28 @@
 
 :::tip 版本更新
   <p class="logs-version-item">
-    <span>2020-09-07</span>
+    <span>2020-09-10</span>
+    <b>v 0.1.55</b>
+  </p>
+  
+  <ol reversed>
+     <li>新增<b>InputCascade</b>组件。</li>
+     <li>新增<b>Switch</b>组件。</li>
+     <li>移除RadioGroup Radio Checkbox CheckboxGroup中<s>value</s>。</li>
+     <li>修复TreeBug 勾选bug。</li>
+     <li>修复SelectTree 联动bug。</li>
+     <li>修复Tree Checkbox bug。</li>
+  </ol>
+:::
+
+:::tip 版本更新
+  <p class="logs-version-item">
+    <span>2020-09-10</span>
     <b>v 0.1.54</b>
   </p>
   
   <ol reversed>
-     <li>新增<b>Switch</b>组件。</li>
-     <li>移除RadioGroup Radio Checkbox CheckboxGroup中<s>value</s>。</li>
-     <li>修复Tree Checkbox问题。</li>
+     <li>v 0.1.53</li>
   </ol>
 :::
 

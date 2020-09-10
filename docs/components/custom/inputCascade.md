@@ -1,10 +1,24 @@
-### 输入框级联
+### 输入框级联  InputCascade
 ---
 
 :::demo
 ```html
     <template>
-        <input type="text"> <input type="text"> <input type="text">
+        <CInputCascade type="text" 
+            :list-data="listData"
+            v-model="value"
+            mutilple
+        />
     </template>
+    <script>
+        export default {
+            data(){
+                return {
+                    listData: [],
+                    value: []
+                }
+            }
+        }
+    </script>
 ```
 :::
