@@ -11,6 +11,7 @@
      <li>新增<b>InputCascade</b>组件。</li>
      <li>新增<b>Switch</b>组件。</li>
      <li>移除RadioGroup Radio Checkbox CheckboxGroup中<s>value</s>。</li>
+     <li>重构<b>Tree</b> <b>TreeModal</b> <b>InputTreeModal</b>组件。</li>
      <li>修复TreeBug 勾选bug。</li>
      <li>修复SelectTree 联动bug。</li>
      <li>修复Tree Checkbox bug。</li>

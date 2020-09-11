@@ -19,6 +19,8 @@
         <p>{{selectedData}}</p>
         <CTree :list-data="listData"
                 v-model="selectedData"
+                line
+                fileIcon
         />
     </template>
     <script>
@@ -679,7 +681,7 @@ export default {
         editTreeNode(item, type){
             return new Promise(resolve => {
                 setTimeout(()=>{
-                    console.log(item, type, 123)
+                    console.log(item, type, 123);
                     resolve({code: 200})
                 },5000)
             }).then(res=>res)
