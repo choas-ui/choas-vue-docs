@@ -673,7 +673,10 @@ export default {
                     ]
                 }
             ],
-            selectedData:[],
+            selectedData:[{
+              key: '冷色',
+              value: '0-0',
+            }],
             searchStr:'',
         }
     },
