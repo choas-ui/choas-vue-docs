@@ -4,6 +4,17 @@
 :::tip 版本更新
   <p class="logs-version-item">
     <span>2020-09-15</span>
+    <b>v 0.1.56</b>
+  </p>
+  
+  <ol reversed>
+     <li>修复TreeModal左右不同步bug。</li>
+  </ol>
+:::
+
+:::tip 版本更新
+  <p class="logs-version-item">
+    <span>2020-09-15</span>
     <b>v 0.1.55</b>
   </p>
   
