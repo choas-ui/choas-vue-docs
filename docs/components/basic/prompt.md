@@ -52,24 +52,26 @@
 :::demo
 ```html
     <template>
-        <CPrompt dialog="你点击了提示……" place-setting="left-top">
-            <CButton size="ssmall">left-top</CButton>
-        </CPrompt>
-        <CPrompt dialog="你点击了提示……"  place-setting="left-bottom">
-            <CButton size="ssmall">left-bottom</CButton>
-        </CPrompt>
-        <CPrompt dialog="你点击了提示……" place-setting="right-top">
-            <CButton size="ssmall">right-top</CButton>
-        </CPrompt>
-        <CPrompt dialog="你点击了提示……"  place-setting="right-bottom">
-            <CButton size="ssmall">right-bottom</CButton>
-        </CPrompt>
-        <CPrompt dialog="你点击了提示……" place-setting="center-top">
-            <CButton size="ssmall">center-top</CButton>
-        </CPrompt>
-        <CPrompt dialog="你点击了提示……"  place-setting="center-bottom">
-            <CButton size="ssmall">center-bottom</CButton>
-        </CPrompt>
+        <div :style="{padding: '100px 20px'}">
+                <CPrompt dialog="你点击了提示……" place-setting="left-top">
+                    <CButton size="ssmall">left-top</CButton>
+                </CPrompt>
+                <CPrompt dialog="你点击了提示……"  place-setting="left-bottom">
+                    <CButton size="ssmall">left-bottom</CButton>
+                </CPrompt>
+                <CPrompt dialog="你点击了提示……" place-setting="right-top">
+                    <CButton size="ssmall">right-top</CButton>
+                </CPrompt>
+                <CPrompt dialog="你点击了提示……"  place-setting="right-bottom">
+                    <CButton size="ssmall">right-bottom</CButton>
+                </CPrompt>
+                <CPrompt dialog="你点击了提示……" place-setting="center-top">
+                    <CButton size="ssmall">center-top</CButton>
+                </CPrompt>
+                <CPrompt dialog="你点击了提示……"  place-setting="center-bottom">
+                    <CButton size="ssmall">center-bottom</CButton>
+                </CPrompt>
+        </div>
     </template>
 ``` 
 :::
