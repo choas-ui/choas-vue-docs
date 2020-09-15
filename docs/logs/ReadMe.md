@@ -4,6 +4,17 @@
 :::tip 版本更新
   <p class="logs-version-item">
     <span>2020-09-15</span>
+    <b>v 0.1.57</b>
+  </p>
+  
+  <ol reversed>
+     <li>新增Tree TreeModal InputTreeModal 多选conditionProps条件。</li>
+  </ol>
+:::
+
+:::tip 版本更新
+  <p class="logs-version-item">
+    <span>2020-09-15</span>
     <b>v 0.1.56</b>
   </p>
   
