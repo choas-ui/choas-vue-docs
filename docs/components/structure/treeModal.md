@@ -682,8 +682,6 @@
   |height|无|String|无|是否在该组件所有类前加前缀|
   |mask|无|String|无|是否在该组件所有类前加前缀|
   |prefix|无|String|无|是否在该组件所有类前加前缀|
-  |prefix|无|String|无|是否在该组件所有类前加前缀|
-  |prefix|无|String|无|是否在该组件所有类前加前缀|
 
 #### 问答 QAQ
 ---

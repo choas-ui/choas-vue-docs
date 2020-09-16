@@ -10,6 +10,7 @@
   <ol reversed>
      <li>新增Tree TreeModal InputTreeModal 多选conditionProps条件。</li>
      <li>修复Tree 刷新bug。</li>
+     <li>修复SelectTree 刷新bug。</li>
   </ol>
 :::
 
