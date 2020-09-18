@@ -1,6 +1,49 @@
 ### 菜单 Menu
 ---
 
+  <ul>
+    <li>mode align水平  vertical竖直  vertical-inline竖直展开 自动控制展开方向</li>
+    <li>collapsed 是否折叠  显示图标</li>
+    <li>className</li>
+    <li>childrenClassName (函数 或 字符串)</li>
+    <li>disable 是否禁用</li>
+    <li>openMenuValue 展开数组 仅在inline</li>
+    <li>defaultOpenValues 展开数组</li>
+    <li>dataList 数据渲染  title, key, icon, expandIcon, pickedUpIcon, type: outerLink</li>
+    <li>selectedValue 点击值</li>
+    <li>MenuItem</li>
+    <li>MenuItemGroup title属性</li>
+    <li>MenuSubItem</li>
+  </ul>
+  
+#### 基础 basic
+---
+  <ul>
+    <li>fontClass 字体图标。</li>
+  </ul>
+
+:::demo
+```html
+<template>
+    <CMenu
+        font-class="fa fa-clipboard"
+        color="#666"
+    >
+      <CMenuItem key="123">
+      123
+      </CMenuItem>
+    </CMenu>
+    <script>
+      export default {
+          methods:{
+             log(){console.log(123);},
+          }
+      }
+    </script>
+</template>
+```
+:::
+
 
 #### 属性列表 props
 ---

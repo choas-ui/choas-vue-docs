@@ -579,7 +579,6 @@ export default {
     // 提供importSrc 函数用于引入资源
     // Icon.importSrc(type, setting)
     /**
-    * @name importSrc
     * @param type 'iconFont' 'iconClass' 'svg'
     * @param setting  
     *                iconFont 引入时
