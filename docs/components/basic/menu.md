@@ -30,8 +30,14 @@
         color="#666"
     >
       <CMenuItem key="123">
-      123
+        123
       </CMenuItem>
+      <CMenuItemGroup>
+        123
+      </CMenuItemGroup>
+      <CMenuSubItem>
+        123
+      </CMenuSubItem>
     </CMenu>
     <script>
       export default {
