@@ -235,6 +235,14 @@
                     ],
                 }
             },
+            mounted(){
+              setTimeout(()=>{
+                this.selectedData.push({
+                   id: '014557484S-1-0019',
+                   name: '王常规',
+                })
+              },2000)
+            }
         }
     </script>
 ```
