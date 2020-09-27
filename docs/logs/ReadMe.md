@@ -3,6 +3,29 @@
 
 :::tip 版本更新
   <p class="logs-version-item">
+    <span>2020-09-27</span>
+    <b>v 0.1.59</b>
+  </p>
+  
+  <ol reversed>
+     <li>修复InputTreeModal syncTreeListData函数同步问题。</li>
+     <li>修复InputTreeModal 外层数据更新内层不刷新的问题。</li>
+  </ol>
+:::
+
+:::tip 版本更新
+  <p class="logs-version-item">
+    <span>2020-09-24</span>
+    <b>v 0.1.58</b>
+  </p>
+  
+  <ol reversed>
+     <li>修复InputTreeModal 更新问题。</li>
+  </ol>
+:::
+
+:::tip 版本更新
+  <p class="logs-version-item">
     <span>2020-09-16</span>
     <b>v 0.1.57</b>
   </p>
